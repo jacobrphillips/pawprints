@@ -1,0 +1,258 @@
+a,
+button {
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f4f4f4;
+  width: 100%;
+}
+
+.logo-container {
+  width: 130px;
+  height: 55px;
+  margin: 0px 10px;
+  display: flex;
+  justify-content: center;
+  position: left;
+}
+
+.header-logo {
+  transform: scale(0.5);
+}
+
+.header-menu {
+  position: absolute;
+  top: 100px;
+  right: 50px;
+  width: 250px;
+}
+
+.hamburger-container {
+  position: fixed;
+  right: -500px;
+  width: 350px;
+  height: 100%;
+  background-color: #fbe365;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.header-menu ul li {
+  color: #454646;
+  text-align: center;
+  list-style-type: none;
+  font-size: 1.5em;
+  padding: 15px 30px;
+  border-bottom: 1pt solid #454646;
+}
+
+.header-menu a {
+  text-decoration: none;
+  color: #454646;
+}
+
+.header-menu ul li:hover {
+  transition: 0.4s;
+  background-color: #4546462f;
+}
+
+.header-menu a:hover {
+  color: #9b8e4a;
+}
+
+.header-menu a:active {
+  color: #312e1d;
+}
+
+.header-menu .sign-up-btn {
+  background-color: transparent;
+  color: #454646;
+  border-color: #454646;
+  font-size: 1rem;
+  border-radius: 30px;
+  padding: 7px;
+  margin: 30px 30px 30px 75px;
+  width: 100px;
+}
+
+.sign-up-btn:hover {
+  transition: 0.4s;
+  background-color: #454646;
+  color: #fbe365;
+  border-color: #fbe365;
+}
+
+.hamburger,
+.bar {
+  position: fixed;
+}
+
+.hamburger {
+  display: flex;
+  justify-content: center;
+  top: 1.9%;
+  left: 90%;
+  width: 40px;
+  height: 30px;
+  border: none;
+  transform: translate(-50%);
+  background-color: #fbe365;
+  border-radius: 5px;
+  z-index: 3;
+}
+
+.bar {
+  top: 3px;
+  background: #454646;
+  width: 70%;
+  height: 4px;
+  transition: all 0.3s ease-in;
+}
+
+#bar-2 {
+  top: 11px;
+}
+
+#bar-3 {
+  top: 19px;
+}
+
+.hamburger-container.active {
+  right: 0;
+}
+
+.bar.open1 {
+  transform: rotate(45deg) translate(6px, 5px);
+}
+
+.bar.open2 {
+  opacity: 0;
+}
+
+.bar.open3 {
+  transform: rotate(-45deg) translate(6px, -5px);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.active .overlay {
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .hamburger-container {
+    position: fixed;
+    right: -500px;
+    width: 500px;
+    height: 100%;
+    background-color: #fbe365;
+    transition: 0.5s;
+    z-index: 2;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .logo-container {
+    width: 130px;
+    height: 70px;
+    margin: 0px 50px;
+    display: flex;
+    justify-content: center;
+    position: left;
+  }
+
+  .header-logo {
+    transform: scale(0.6);
+  }
+
+  .nav-long {
+    position: fixed;
+    display: flex;
+    right: 1%;
+    justify-content:right;
+    /* height: 100px; */
+    width: 50%;
+    z-index: 3;
+  }
+
+  .nav-long ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 70%;
+    border-radius: 100px;
+    background-color: #fbe365;
+    margin-top: 20px;  
+    margin-bottom: 25px; 
+    padding: 0px 50px;
+  }
+
+  .nav-long ul li {
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .nav-long ul li a {
+    font-size: 1.1rem;
+    margin-top: 10px;
+  }
+
+
+  .nav-long a {
+    text-decoration: none;
+    color: #454646;
+  }
+  
+  .nav-long a:active {
+    text-decoration: none;
+    color: #8f8962;
+  }
+  
+  .nav-long ul li:hover {
+    transition: 0.4s;
+    background-color: #4646452f;
+  }
+
+  .sign-up-btn-long {
+    background-color: transparent;
+    color: #454646;
+    background-color: #f4f4f4;
+    border-color: #454646;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    padding: 3px 0px;
+    margin: 25px 0px 30px 20px;
+    width: 100px;
+  }
+
+  .sign-up-btn-long:hover {
+    transition: 0.4s;
+    background-color: #454646;
+    color: #fbe365;
+    border-color: #fbe365;
+  }
+
+
+  }
+

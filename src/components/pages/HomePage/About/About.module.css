@@ -1,0 +1,440 @@
+.about-container {
+    width: 100%;
+    margin-top: 300px;
+    height: 700px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: #f4f4f4;
+}
+
+.about-header {
+    display: flex;
+    padding: 20px 20px 20px 20px;
+}
+
+.about-circle {
+    background-color: #fbe365;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    margin-right: 5px;
+    transform: translateY(20%);
+}
+
+.about-header h6{
+    font-weight: 600;
+}
+
+.about-heading {
+    width: 80%;
+    margin:0px 0px 20px 20px;
+}
+
+.about-heading h3 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.about-statements {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.our-mission-container, .our-vision-container, .our-philosophy-container {
+    width: 250px;
+    height: 200px;
+    margin: 10px 50px 10px 50px;
+    border: 2px solid #454646;
+    background-color: #f4f4f4;
+    border-radius: 25px;
+}
+
+.our-mission-container:hover, .our-vision-container:hover, .our-philosophy-container:hover{
+    background-color: #fbe365;
+    transition: .4s;
+}
+
+
+.our-mission-container h6, .our-vision-container h6 {
+    font-size: 1.2rem;
+   margin: 10px 0px 10px 13px;
+}
+
+.our-philosophy-container h6 {
+    font-size: 1rem;
+    margin: 10px 0px 10px 13px;
+}
+
+.our-mission-container img, .our-philosophy-container img {
+    width: 20px;
+    height: 20px;
+    margin-left: 50px;
+}
+
+.our-vision-container img {
+    width: 20px;
+    height: 20px;
+    margin-left: 65px;
+}
+
+.our-mission-container p, .our-vision-container p, .our-philosophy-container p{
+    padding: 10px 10px 0px 10px;
+    font-size: .9rem;;
+}
+
+@media screen and (min-width: 768px) {
+    .about-container {
+        width: 100%;
+        margin-top: 500px;
+        height: 630px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        background-color: #f4f4f4;
+    }
+
+    .about-header {
+        display: flex;
+        padding: 20px 20px 20px 20px;
+    }
+    
+    .about-circle {
+        background-color: #fbe365;
+        width: 15px;
+        height: 15px;
+        border-radius: 10px;
+        margin-right: 5px;
+        transform: translateY(30%);
+    }
+    
+    .about-header h6{
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+    
+    .about-heading {
+        width: 70%;
+        margin: 10px 0px 40px 20px;
+    }
+    
+    .about-heading h3 {
+        font-size: 4rem;
+        font-weight: 400;
+    }
+
+    .our-mission-container h6, .our-vision-container h6 {
+        font-size: 1.5rem;
+       margin: 10px 0px 10px 13px;
+    }
+    
+    .our-philosophy-container h6 {
+        font-size: 1.2rem;
+        margin: 10px 0px 10px 13px;
+    }
+
+    .our-mission-container img, .our-philosophy-container img {
+        width: 25px;
+        height: 25px;
+        margin-left: 50px;
+    }
+    
+    .our-vision-container img {
+        width: 25x;
+        height: 25px;
+        margin-left: 70px;
+    }
+    
+    .our-mission-container p, .our-vision-container p, .our-philosophy-container p{
+        padding: 10px 10px 0px 10px;
+        font-size: 1rem;;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .about-container {
+        width: 100%;
+        margin-top: 700px;
+        height: 850px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        background-color: #f4f4f4;
+    }
+
+
+    .about-header {
+        display: flex;
+        padding: 20px 20px 20px 20px;
+    }
+    
+    .about-circle {
+        background-color: #fbe365;
+        width: 15px;
+        height: 15px;
+        border-radius: 10px;
+        margin-right: 20px;
+        transform: translateY(50%);
+    }
+    
+    .about-header h6{
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+    
+    .about-heading {
+        width: 70%;
+        margin: 20px 0px 70px 20px;
+    }
+    
+    .about-heading h3 {
+        font-size: 5rem;
+        font-weight: 400;
+    }
+
+    .about-statements {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .our-mission-container, .our-vision-container, .our-philosophy-container {
+        width: 300px;
+        height: 255px;
+        margin: 10px 50px 10px 50px;
+        border: 2px solid #454646;
+        background-color: #f4f4f4;
+        border-radius: 25px;
+    }
+    
+
+    .our-mission-container h6, .our-vision-container h6 {
+        font-size: 2rem;
+       margin: 10px 0px 10px 13px;
+    }
+    
+    .our-philosophy-container h6 {
+        font-size: 1.6rem;
+        margin: 10px 0px 10px 13px;
+    }
+
+    .our-mission-container img, .our-philosophy-container img {
+        width: 25px;
+        height: 25px;
+        margin-left: 50px;
+    }
+    
+    .our-vision-container img {
+        width: 30px;
+        height: 30px;
+        margin-left: 70px;
+    }
+    
+    .our-mission-container p, .our-vision-container p, .our-philosophy-container p{
+        padding: 10px 10px 0px 10px;
+        font-size: 1.3rem;;
+    }
+
+}
+
+
+@media screen and (min-width: 1440px) {
+    
+    .about-container {
+        width: 100%;
+        margin-top: 900px;
+        height: 850px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        background-color: #f4f4f4;
+    }
+
+    .about-header {
+        display: flex;
+        padding: 20px 20px 20px 20px;
+    }
+    
+    .about-circle {
+        background-color: #fbe365;
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        margin-right: 20px;
+        transform: translateY(50%);
+    }
+    
+    .about-header h6{
+        font-weight: 600;
+        font-size: 2rem;
+    }
+    
+    .about-heading {
+        width: 70%;
+        margin: 50px 0px 100px 20px;
+    }
+    
+    .about-heading h3 {
+        font-size: 6rem;
+        font-weight: 400;
+    }
+
+    .about-statements {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .our-mission-container, .our-vision-container, .our-philosophy-container {
+        width: 400px;
+        height: 355px;
+        margin: 10px 50px 10px 50px;
+        border: 2px solid #454646;
+        background-color: #f4f4f4;
+        border-radius: 25px;
+    }
+    
+    
+    .our-mission-container h6, .our-vision-container h6 {
+        font-size: 2.5rem;
+        margin: 10px 20px 30px 13px;
+    }
+    
+    .our-philosophy-container h6 {
+        font-size: 2.2rem;
+        margin: 10px 20px 20px 13px;
+    }
+    
+    .our-mission-container img {
+        width: 40px;
+        height: 40px;
+        margin-left: 80px;
+    }
+
+    .our-vision-container img {
+        width: 30px;
+        height: 30px;
+        margin-left: 70px;
+      }
+
+  .our-philosophy-container img {
+        width: 40px;
+        height: 40px;
+        margin-left: 50px;
+    }
+    
+    
+    .our-mission-container p, .our-vision-container p, .our-philosophy-container p{
+        padding: 10px 10px 0px 10px;
+        font-size: 1.8rem;;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .our-vision-container img {
+      width: 40px;
+      height: 40px;
+      margin-left: 110px;
+    }
+  }
+
+  @media screen and (min-width: 1600px) {
+    .about-container {
+        width: 100%;
+        margin-top: 900px;
+        height: 600px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        background-color: #f4f4f4;
+    }
+
+    .about-header {
+        display: flex;
+        padding: 20px 20px 20px 20px;
+    }
+    
+    .about-circle {
+        background-color: #fbe365;
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        margin-right: 20px;
+        transform: translateY(50%);
+    }
+    
+    .about-header h6{
+        font-weight: 600;
+        font-size: 2rem;
+    }
+    
+    .about-heading {
+        width: 50%;
+        margin: 50px 0px 100px 20px;
+    }
+    
+    .about-heading h3 {
+        font-size: 5rem;
+        font-weight: 400;
+    }
+
+    .about-statements {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .our-mission-container, .our-vision-container, .our-philosophy-container {
+        width: 400px;
+        height: 355px;
+        margin: 10px 50px 10px 50px;
+        border: 2px solid #454646;
+        background-color: #f4f4f4;
+        border-radius: 25px;
+    }
+    
+    
+    .our-mission-container h6, .our-vision-container h6 {
+        font-size: 2.5rem;
+        margin: 10px 20px 30px 13px;
+    }
+    
+    .our-philosophy-container h6 {
+        font-size: 2.2rem;
+        margin: 10px 20px 20px 13px;
+    }
+    
+    .our-mission-container img {
+        width: 40px;
+        height: 40px;
+        margin-left: 80px;
+    }
+
+    .our-vision-container img {
+        width: 30px;
+        height: 30px;
+        margin-left: 70px;
+      }
+
+  .our-philosophy-container img {
+        width: 40px;
+        height: 40px;
+        margin-left: 50px;
+    }
+    
+    
+    .our-mission-container p, .our-vision-container p, .our-philosophy-container p{
+        padding: 10px 10px 0px 10px;
+        font-size: 1.8rem;;
+    }
+  }
+
+  @media screen and (min-width: 1600px) {
+    .our-vision-container img {
+      width: 40px;
+      height: 40px;
+      margin-left: 110px;
+    }
+  }
+  

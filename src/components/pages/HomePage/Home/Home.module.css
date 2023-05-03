@@ -1,0 +1,614 @@
+.home-container {
+    width: 100%;
+    height: 500px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: #f4f4f4;
+}
+
+.home-statement-container {
+    width: 100%;
+    height: 150px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.home-statement {
+    width: 250px;
+    font-size: 1.2rem;
+    padding: 15px;
+    /* background-color: #fbe365; */
+    border-radius: 15px;
+}
+
+.home-hero-container {
+    /* background-color: gray; */
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-statement {
+    margin: 30px 20px;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.shelter-highlight {
+    background-color: #fbe365;
+    padding: 0 6px;  
+    border-radius: 15px;
+}
+
+.paw-home{
+    position:absolute;
+    width: 30px;
+    height: 30px;
+    margin-left: 260px;
+    margin-top: 40px;
+    transform: rotate(45deg) scale(1);
+}
+
+.home-buttons-container {
+        /* background-color: gray; */
+        width: 100%;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+}
+
+.facebook-button, .twitter-button{
+    display: flex;
+    justify-content: center;
+    margin: 50px 10px;
+    background-color: #fbe365;
+    padding: 15px;
+    border-radius: 100px;
+}
+
+.facebook-button i, .twitter-button i{
+   font-size: 1.5rem;
+}
+
+.facebook-button a, .twitter-button a{
+    text-decoration: none;
+    color: #454646;
+}
+
+.wide-dog-container {
+    position: relative;
+    background-color: #fbe365;
+    width: 100%;
+    height: 900px;
+    background-position: 50% 0;
+    z-index: -1;
+}
+
+.home-dog-picture-container {
+    position: relative;
+    background-image: url(../../../../src/assets/img/christal-yuen-Aka2x2D4Ph0-unsplash.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    background-position: 50% 0;
+    z-index: -1;
+}
+
+
+@media screen and (min-width: 600px) {
+
+    .home-container {
+        width: 100%;
+        height: 680px;
+         background-image: url('../../../../src/assets/img/pets-background1.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        background-color: #f4f4f4;
+    }
+    
+    .home-statement-container {
+        width: 100%;
+        height: 150px;
+        margin-top: 170px;
+        display: flex;
+        justify-content: right;
+    }
+    
+    .home-statement {
+        width: 400px;
+        font-size: 1.4rem;
+        margin-right: 10px;
+        padding: 15px;
+        /* background-color: #fbe365; */
+        border-radius: 15px;
+    }
+    
+    .home-hero-container {
+        /* background-color: gray; */
+        width: 100%;
+        height: 150px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: left;
+    }
+    
+    .hero-statement {
+        margin: 30px 50px;
+        font-size: 5.5rem;
+    }
+    
+    .shelter-highlight {
+        background-color: #fbe365;
+        padding: 0 6px;  
+        border-radius: 15px;
+    }
+    
+    .paw-home{
+        position:absolute;
+        width: 50px;
+        height: 50px;
+        margin-left: 570px;
+        margin-top: 90px;
+        transform: rotate(45deg) scale(1);
+    }
+    
+    .home-buttons-container {
+        margin-top: 30px;
+        width: 100%;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .facebook-button, .twitter-button{
+        display: flex;
+        justify-content: center;
+        margin: 45px 15px;
+        background-color: #fbe365;
+        padding: 15px;
+        border-radius: 100px;
+    }
+    
+    .facebook-button i, .twitter-button i{
+       font-size: 2rem;
+    }
+    
+    .facebook-button a, .twitter-button a{
+        text-decoration: none;
+        color: #454646;
+    }
+    
+
+    .home-dog-picture-container {
+        position: absolute;
+        background-image: url(../../../../src/assets/img/christal-yuen-Aka2x2D4Ph0-unsplash.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 700px;
+        background-position: 50% 0;
+        z-index: -1;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .home-container {
+        width: 100%;
+        height: 680px;
+        background-image: url('../../../../src/assets/img/pets-background1.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        background-color: #f4f4f4;
+    }
+    
+    .home-statement-container {
+        width: 100%;
+        height: 150px;
+        margin-top: 170px;
+        display: flex;
+        justify-content: right;
+    }
+    
+    .home-statement {
+        width: 400px;
+        font-size: 1.4rem;
+        margin-right: 10px;
+        padding: 15px;
+        /* background-color: #fbe365; */
+        border-radius: 15px;
+    }
+    
+    .home-hero-container {
+        /* background-color: gray; */
+        width: 100%;
+        height: 150px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: left;
+    }
+    
+    .hero-statement {
+        margin: 30px 50px;
+        font-size: 6.5rem;
+    }
+    
+    .shelter-highlight {
+        background-color: #fbe365;
+        padding: 0 6px;  
+        border-radius: 15px;
+    }
+    
+    .paw-home{
+        position:absolute;
+        width: 60px;
+        height: 60px;
+        margin-left: 670px;
+        margin-top: 110px;
+        transform: rotate(45deg) scale(1);
+    }
+    
+    .home-buttons-container {
+        margin-top: 30px;
+        width: 100%;
+        height: 150px;
+        display: flex;
+        justify-content: right;
+        margin-right: 100px;
+    }
+    
+    .facebook-button, .twitter-button{
+        display: flex;
+        justify-content: center;
+        margin: 45px 15px;
+        background-color: #fbe365;
+        padding: 15px;
+        border-radius: 100px;
+    }
+
+    .twitter-button{
+        margin-right: 80px;
+    }
+    
+    .facebook-button i, .twitter-button i{
+       font-size: 2rem;
+    }
+    
+    .facebook-button a, .twitter-button a{
+        text-decoration: none;
+        color: #454646;
+    }
+
+    .wide-dog-container {
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        background-color: #fbe365;
+        width: 100%;
+        height: 800px;
+        background-position: 50% 0;
+        z-index: -1;
+    }
+
+    .why-us-container {
+        display: flex;
+        justify-content: center;
+        background-color: #fbe365;
+        border: 2px solid #454646;
+        border-radius: 25px;
+        margin-top: 200px;
+        margin-left: 30px;
+        width: 50%;
+        height: 300px;
+    }
+    
+    .why-us-container p {
+        font-size: 1.6rem;
+        padding: 15px;
+    }
+
+    .dog-picture-container {
+        width: 30%;
+        height: 300px;
+        margin-top: 200px;
+        margin-right: 20px;
+        background-image: url(../../../../../src/assets/img/christal-yuen-Aka2x2D4Ph0-unsplash.jpg);
+        background-size: cover;
+        background-position: 60% 0;
+        border-radius: 25px;
+    }
+
+   
+
+    .home-dog-picture-container {
+        position: absolute;
+        background-image: url(../../../../src/assets/img/christal-yuen-Aka2x2D4Ph0-unsplash.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 900px;
+        background-position: 50% 0;
+        z-index: -1;
+    }
+}
+
+
+@media screen and (min-width: 1440px){
+
+    .home-container{
+        width: 100%;
+        height: 800px;
+        background-image: url('../../../../src/assets/img/pets-background1.svg');
+        background-repeat: no-repeat;
+        background-size: 100% 120%;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        background-color: #f4f4f4;
+    }
+    
+    .home-statement-container {
+        width: 100%;
+        height: 150px;
+        margin-top: 190px;
+        display: flex;
+        justify-content: right;
+    }
+    
+    .home-statement {
+        width: 400px;
+        font-size: 1.7rem;
+        margin-top: 30px;
+        margin-right: 450px;
+        padding: 15px;
+        /* background-color: #fbe365; */
+        border-radius: 15px;
+    }
+    
+    .home-hero-container {
+        /* background-color: gray; */
+        width: 100%;
+        height: 150px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: left;
+    }
+    
+    .hero-statement {
+        margin: 1px 50px;
+        font-size: 7.5rem;
+    }
+    
+    .shelter-highlight {
+        background-color: #fbe365;
+        padding: 0 6px;  
+        border-radius: 15px;
+    }
+    
+    .paw-home{
+        position:absolute;
+        width: 80px;
+        height: 80px;
+        margin-left: 765px;
+        margin-top: 120px;
+        transform: rotate(45deg) scale(1);
+    }
+    
+    .home-buttons-container {
+        margin-top: 140px;
+        width: 100%;
+        height: 150px;
+        display: flex;
+        justify-content: right;
+        margin-right: 100px;
+    }
+    
+    .facebook-button, .twitter-button{
+        display: flex;
+        justify-content: center;
+        margin: 45px 15px;
+        background-color: #fbe365;
+        padding: 15px;
+        border-radius: 100px;
+    }
+
+    .twitter-button{
+        margin-right: 500px;
+    }
+    
+    .facebook-button i, .twitter-button i{
+       font-size: 2rem;
+    }
+    
+    .facebook-button a, .twitter-button a{
+        text-decoration: none;
+        color: #454646;
+    }
+
+    .wide-dog-container {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        background-color: #fbe365;
+        width: 100%;
+        height: 1200px;
+        z-index: -1;
+    }
+
+
+    .why-us-container {
+        display: flex;
+        justify-content: center;
+        background-color: #fbe365;
+        border: 2px solid #454646;
+        border-radius: 25px;
+        margin-top: 250px;
+        margin-right: 70px;
+        width: 50%;
+        height: 410px;
+    }
+    
+    .why-us-container p {
+        font-size: 2.3rem;
+        padding: 20px;
+    }
+
+    .dog-picture-container {
+        width: 30%;
+        height: 410px;
+        margin-top: 250px;
+        margin-right: 20px;
+        background-image: url(../../../../../src/assets/img/christal-yuen-Aka2x2D4Ph0-unsplash.jpg);
+        background-size: cover;
+        background-position: 60% 0;
+        border-radius: 25px;
+    }
+
+   
+    .home-dog-picture-container {
+        position: absolute;
+        background-image: url(../../../../src/assets/img/christal-yuen-Aka2x2D4Ph0-unsplash.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 1200px;
+        background-position: 50% 0;
+        z-index: -1;
+    }
+}
+
+
+
+@media screen and (min-width: 1600px){
+    
+    .home-statement-container {
+        width: 100%;
+        height: 150px;
+        margin-top: 170px;
+        display: flex;
+        justify-content: right;
+    }
+    
+    .home-statement {
+        width: 400px;
+        font-size: 1.7rem;
+        margin-top: 60px;
+        margin-right: 500px;
+        padding: 15px;
+        /* background-color: #fbe365; */
+        border-radius: 15px;
+    }
+    
+    .home-hero-container {
+        /* background-color: gray; */
+        width: 100%;
+        height: 150px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: left;
+    }
+    
+    .hero-statement {
+        margin: 2px 50px;
+        font-size: 7.5rem;
+    }
+    
+    .shelter-highlight {
+        background-color: #fbe365;
+        padding: 0 6px;  
+        border-radius: 15px;
+    }
+    
+    .paw-home{
+        position:absolute;
+        width: 80px;
+        height: 80px;
+        margin-left: 765px;
+        margin-top: 120px;
+        transform: rotate(45deg) scale(1);
+    }
+    
+    .home-buttons-container {
+        margin-top: 130px;
+        width: 100%;
+        height: 150px;
+        display: flex;
+        justify-content: right;
+        margin-right: 100px;
+    }
+    
+    .facebook-button, .twitter-button{
+        display: flex;
+        justify-content: center;
+        margin: 45px 15px;
+        background-color: #fbe365;
+        padding: 15px;
+        border-radius: 100px;
+    }
+
+    .twitter-button{
+        margin-right: 570px;
+    }
+    
+    .facebook-button i, .twitter-button i{
+       font-size: 2rem;
+    }
+    
+    .facebook-button a, .twitter-button a{
+        text-decoration: none;
+        color: #454646;
+    }
+
+    .wide-dog-container {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        background-color: #fbe365;
+        width: 100%;
+        height: 1200px;
+        z-index: -1;
+    }
+
+
+    .why-us-container {
+        display: flex;
+        justify-content: center;
+        background-color: #fbe365;
+        border: 2px solid #454646;
+        border-radius: 25px;
+        margin-top: 270px;
+        margin-right: 70px;
+        width: 50%;
+        height: 400px;
+    }
+    
+    .why-us-container p {
+        font-size: 2.3rem;
+        padding: 35px;
+    }
+
+    .dog-picture-container {
+        width: 30%;
+        height: 400px;
+        margin-top: 270px;
+        margin-right: 20px;
+        background-image: url(../../../../../src/assets/img/christal-yuen-Aka2x2D4Ph0-unsplash.jpg);
+        background-size: cover;
+        background-position: 60% 0;
+        border-radius: 25px;
+    }
+
+    .home-dog-picture-container {
+        position: absolute;
+        background-image: url(../../../../src/assets/img/christal-yuen-Aka2x2D4Ph0-unsplash.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 1300px;
+        background-position: 50% 0;
+        z-index: -1;
+    }
+}

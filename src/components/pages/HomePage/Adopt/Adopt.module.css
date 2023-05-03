@@ -1,0 +1,410 @@
+.adopt-container {
+    width: 100%;
+    height: 600px;
+    margin-top: 150px;
+    margin-bottom: -25px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: #fbe365;
+}
+
+.adopt-header {
+    display: flex;
+    padding: 20px 20px 20px 20px;
+}
+
+.adopt-circle {
+    background-color: #454646;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    margin-right: 5px;
+    transform: translateY(20%);
+}
+
+.adopt-header h6{
+    font-weight: 600;
+}
+
+.adopt-heading {
+    width: 80%;
+    margin: 0px 0px 20px 20px;
+}
+
+.adopt-heading h3 {
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.adopt-desc-container {
+    width: 250px;
+    height: 250px;
+    margin: 40px 50px 10px 30px;
+    border: 2px solid #454646;
+    border-radius: 25px;
+}
+
+.adopt-desc-container:hover {
+    background-color: #f4f4f4;
+    transition: .4s;
+}
+
+.adopt-desc-container h6 {
+    font-size: 1.2rem;
+    margin: 10px 0px 10px 13px;
+}
+
+.adopt-desc-container p {
+    padding: 30px 10px 0px 10px;
+    margin-bottom: 20px;
+    font-size: .9rem;
+}
+
+.adopt-desc-container img {
+    width: 30px;
+    height: 30px;
+    margin-left: 65px;
+}
+
+.adopt-btn {
+    color: #454646;
+    background-color: #fbe365;
+    border-color: #454646;
+    font-size: .8rem;
+    font-weight: 600;
+    border-radius: 30px;
+    padding: 10px 0px;
+    margin: 30px 0px 10px 20px;
+    width: 200px;
+}
+
+.adopt-btn:hover {
+    background-color: #f4f4f4;
+}
+
+@media screen and (min-width: 375px) {
+    
+.adopt-desc-container {
+    width: 250px;
+    height: 250px;
+    margin: 40px 50px 10px 55px;
+    border: 2px solid #454646;
+    border-radius: 25px;
+}
+}
+
+@media screen and (min-width: 400px) {
+    
+.adopt-desc-container {
+    width: 250px;
+    height: 250px;
+    margin: 40px 50px 10px 85px;
+    border: 2px solid #454646;
+    border-radius: 25px;
+}
+
+}
+
+@media screen and (min-width: 700px) {
+    .adopt-container{
+        width: 100%;
+        height: 800px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+
+    .adopt-header {
+        display: flex;
+        padding: 20px 20px 20px 20px;
+    }
+    
+    .adopt-circle {
+        width: 15px;
+        height: 15px;
+        border-radius: 10px;
+        margin-right: 5px;
+        transform: translateY(30%);
+    }
+    
+    .adopt-header h6{
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+    
+    .adopt-heading {
+        width: 70%;
+        margin: 10px 0px 40px 20px;
+    }
+    
+    .adopt-heading h3 {
+        font-size: 3rem;
+        font-weight: 400;
+    }
+
+    .adopt-desc-container {
+        width: 400px;
+        height: 300px;
+        margin: 80px 50px 0px 300px;
+        border: 3px solid #454646;
+        border-radius: 25px;
+    }
+    
+    .adopt-desc-container h6 {
+        font-size: 2rem;
+       margin: 10px 0px 10px 15px;
+    }
+    
+    .adopt-desc-container img {
+        width: 40px;
+        height: 40px;
+        margin-left: 130px;
+    }
+
+    .adopt-desc-container p{
+        padding: 10px 10px 0px 10px;
+        font-size: 1.4rem;;
+    }
+
+    .adopt-btn {
+        color: #454646;
+        background-color: #fbe365;
+        border-color: #454646;
+        font-size: 1rem;
+        font-weight: 600;
+        border-radius: 30px;
+        padding: 10px 0px;
+        margin: 30px 0px 10px 50px;
+        width: 300px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+ 
+    .adopt-container{
+        width: 100%;
+        height: 1000px;
+        margin-top: 150px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+
+    .adopt-header {
+        display: flex;
+        padding: 20px 20px 20px 20px;
+    }
+    
+    .adopt-circle {
+        width: 15px;
+        height: 15px;
+        border-radius: 10px;
+        margin-right: 15px;
+        transform: translateY(60%);
+    }
+    
+    .adopt-header h6{
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+    
+    .adopt-heading {
+        width: 70%;
+        margin: 10px 0px 40px 20px;
+    }
+    
+    .adopt-heading h3 {
+        font-size: 4rem;
+        font-weight: 400;
+    }
+
+    .adopt-desc-container {
+        width: 400px;
+        height: 355px;
+        margin: 10px 50px 0px 500px;
+        border: 3px solid #454646;
+        border-radius: 25px;
+    }
+    
+    .adopt-desc-container h6 {
+        font-size: 2.5rem;
+       margin: 20px 0px 10px 15px;
+    }
+    
+    .adopt-desc-container img {
+        width: 40px;
+        height: 40px;
+        margin-left: 70px;
+    }
+
+    .adopt-desc-container p{
+        padding: 10px 20px 0px 20px;
+        font-size: 1.8rem;;
+    }
+
+    .adopt-btn {
+        color: #454646;
+        background-color: #fbe365;
+        border-color: #454646;
+        font-size: 1.4rem;
+        font-weight: 600;
+        border-radius: 30px;
+        padding: 10px 0px;
+        margin: 10px 0px 10px 20px;
+        width: 350px;
+    }
+    
+    
+}
+
+@media screen and (min-width: 1440px) {
+ 
+    .adopt-container{
+        width: 100%;
+        height: 1000px;
+        margin-top: 500px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+
+    .adopt-header {
+        display: flex;
+        padding: 20px 20px 20px 20px;
+    }
+    
+    .adopt-circle {
+        width: 15px;
+        height: 15px;
+        border-radius: 10px;
+        margin-right: 15px;
+        transform: translateY(100%);
+    }
+    
+    .adopt-header h6{
+        font-weight: 600;
+        font-size: 2rem;
+    }
+    
+    .adopt-heading {
+        width: 70%;
+        margin: 60px 0px 40px 20px;
+    }
+    
+    .adopt-heading h3 {
+        font-size: 4rem;
+        font-weight: 400;
+    }
+
+    .adopt-desc-container {
+        width: 400px;
+        height: 355px;
+        margin: 10px 50px 0px 800px;
+        border: 3px solid #454646;
+        border-radius: 25px;
+    }
+    
+    .adopt-desc-container h6 {
+        font-size: 2.5rem;
+       margin: 20px 0px 10px 15px;
+    }
+    
+    .adopt-desc-container img {
+        width: 40px;
+        height: 40px;
+        margin-left: 70px;
+    }
+
+    .adopt-desc-container p{
+        padding: 10px 20px 0px 20px;
+        font-size: 1.8rem;;
+    }
+
+    .adopt-btn {
+        color: #454646;
+        background-color: #fbe365;
+        border-color: #454646;
+        font-size: 1.4rem;
+        font-weight: 600;
+        border-radius: 30px;
+        padding: 10px 0px;
+        margin: 10px 0px 10px 20px;
+        width: 350px;
+    }
+    
+    
+}
+
+@media screen and (min-width: 1600px) {
+ 
+    .adopt-container{
+        width: 100%;
+        height: 1000px;
+        margin-top: 400px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+
+    .adopt-header {
+        display: flex;
+        padding: 20px 20px 20px 20px;
+    }
+    
+    .adopt-circle {
+        width: 15px;
+        height: 15px;
+        border-radius: 10px;
+        margin-right: 20px;
+        transform: translateY(100%);
+    }
+    
+    .adopt-header h6{
+        font-weight: 600;
+        font-size: 2rem;
+    }
+    
+    .adopt-heading {
+        width: 70%;
+        margin: 60px 0px 40px 20px;
+    }
+    
+    .adopt-heading h3 {
+        font-size: 4rem;
+        font-weight: 400;
+    }
+
+    .adopt-desc-container {
+        width: 400px;
+        height: 355px;
+        margin: 10px 50px 0px 1000px;
+        border: 3px solid #454646;
+        border-radius: 25px;
+    }
+    
+    .adopt-desc-container h6 {
+        font-size: 2.5rem;
+       margin: 20px 0px 10px 15px;
+    }
+    
+    .adopt-desc-container img {
+        width: 40px;
+        height: 40px;
+        margin-left: 70px;
+    }
+
+    .adopt-desc-container p{
+        padding: 10px 20px 0px 20px;
+        font-size: 1.8rem;;
+    }
+
+    .adopt-btn {
+        color: #454646;
+        background-color: #fbe365;
+        border-color: #454646;
+        font-size: 1.4rem;
+        font-weight: 600;
+        border-radius: 30px;
+        padding: 10px 0px;
+        margin: 10px 0px 10px 20px;
+        width: 350px;
+    }
+    
+}
