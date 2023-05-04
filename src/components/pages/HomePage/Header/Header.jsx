@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import styles from './Header.module.css';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const location = useLocation()
 
   const toggleHamburgerMenu = () => {
     setIsOpen(!isOpen);
@@ -22,6 +23,10 @@ const Header = () => {
     };
   }, []);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
   return (
     <header className={styles.header}>
       <div className={styles['logo-container']}>
@@ -35,7 +40,7 @@ const Header = () => {
             <li><a href="#adopt">Adopt</a></li>
             <li><Link to="/pets">Pets</Link></li>
           </ul>
-          <button className={styles['sign-up-btn-long']}>Sign Up</button>
+          <button className={styles['sign-up-btn-long']}><Link to="/sign-up">Sign Up</Link></button>
         </nav>
       ) : (
         <div className={styles['hamburger-container'] + (isOpen ? ` ${styles.active}` : '')}>
@@ -49,7 +54,7 @@ const Header = () => {
               <li><a href="#" onClick={toggleHamburgerMenu}>Home</a></li>
               <li><a href="#about" onClick={toggleHamburgerMenu}>About</a></li>
               <li><a href="#adopt" onClick={toggleHamburgerMenu}>Adopt</a></li>
-              <li><a href="#" onClick={toggleHamburgerMenu}>Pets</a></li>
+              <li onClick={toggleHamburgerMenu}><Link to="/pets">Pets</Link></li>
             </ul>
             <button className={styles['sign-up-btn']}>Sign Up</button>
           </nav>

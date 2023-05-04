@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import styles from './PetsHeader.module.css'
 
 const PetsHeader = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const location = useLocation();
 
   const toggleHamburgerMenu = () => {
     setIsOpen(!isOpen);
@@ -21,6 +22,11 @@ const PetsHeader = () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
+  
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
 
   return (
     <header className={styles.header}>
@@ -35,7 +41,7 @@ const PetsHeader = () => {
             <li><a href="#adopt">Adopt</a></li>
             <li><a href="#">Pets</a></li>
           </ul>
-          <button className={styles['sign-up-btn-long']}>Sign Up</button>
+          <button className={styles['sign-up-btn-long']}><Link to="/sign-up">Sign Up</Link></button>
         </nav>
       ) : (
         <div className={styles['hamburger-container'] + (isOpen ? ` ${styles.active}` : '')}>
@@ -46,7 +52,7 @@ const PetsHeader = () => {
           </button>
           <nav className={styles['header-menu']}>
             <ul>
-              <li><a href="#" onClick={toggleHamburgerMenu}>Home</a></li>
+              <li onClick={toggleHamburgerMenu}><Link to="/">Home</Link></li>
               <li><a href="#about" onClick={toggleHamburgerMenu}>About</a></li>
               <li><a href="#adopt" onClick={toggleHamburgerMenu}>Adopt</a></li>
               <li><a href="#" onClick={toggleHamburgerMenu}>Pets</a></li>
