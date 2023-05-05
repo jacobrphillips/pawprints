@@ -248,7 +248,6 @@
         background-color: #fbe365;
         width: 100%;
         height: 660px;
-        background-position: 50% 0;
         z-index: -1;
     }
 
@@ -493,7 +492,6 @@
         border: 2px solid #454646;
         border-radius: 25px;
         margin-top: 250px;
-        margin-right: 70px;
         width: 80%;
         height: 700px;
     }
@@ -597,7 +595,6 @@
         border: 2px solid #454646;
         border-radius: 25px;
         margin-top: 250px;
-        margin-left: 70px;
         width: 90%;
         height: 750px;
     }

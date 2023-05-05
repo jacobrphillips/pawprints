@@ -35,7 +35,6 @@ const PetsBody = () => {
               <div className={styles['pet-cards-container']}>
                   
               </div>
-              
             </div>    
     </section>
   )

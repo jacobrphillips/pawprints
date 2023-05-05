@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import styles from './Header.module.css';
+import styles from './PetsHeader.module.css'
 
-const Header = () => {
+const PetsHeader = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const location = useLocation()
+  const location = useLocation();
 
   const toggleHamburgerMenu = () => {
     setIsOpen(!isOpen);
@@ -22,6 +22,7 @@ const Header = () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
+  
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -35,10 +36,10 @@ const Header = () => {
       {windowWidth >= 1024 ? (
         <nav className={styles['nav-long']}>
           <ul>
-            <li><a href="#">Home</a></li>
+            <li><Link to="/">Home</Link></li>
             <li><a href="#about">About</a></li>
             <li><a href="#adopt">Adopt</a></li>
-            <li><Link to="/pets">Pets</Link></li>
+            <li><a href="#">Pets</a></li>
           </ul>
           <button className={styles['sign-up-btn-long']}><Link to="/sign-up">Sign Up</Link></button>
         </nav>
@@ -51,18 +52,18 @@ const Header = () => {
           </button>
           <nav className={styles['header-menu']}>
             <ul>
-              <li><a href="#" onClick={toggleHamburgerMenu}>Home</a></li>
+              <li onClick={toggleHamburgerMenu}><Link to="/">Home</Link></li>
               <li><a href="#about" onClick={toggleHamburgerMenu}>About</a></li>
               <li><a href="#adopt" onClick={toggleHamburgerMenu}>Adopt</a></li>
-              <li onClick={toggleHamburgerMenu}><Link to="/pets">Pets</Link></li>
+              <li><a href="#" onClick={toggleHamburgerMenu}>Pets</a></li>
             </ul>
-            <button className={styles['sign-up-btn']}>Sign Up</button>
+            <button className={styles['sign-up-btn']}><Link to="/sign-up">Sign Up</Link></button>
           </nav>
         </div>
       )}
       {isOpen && <div className={styles.overlay} onClick={toggleHamburgerMenu}></div>}
     </header>
   );
-};
+}
 
-export default Header;
+export default PetsHeader

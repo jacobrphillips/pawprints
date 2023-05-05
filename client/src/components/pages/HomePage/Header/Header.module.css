@@ -159,11 +159,11 @@ button {
   display: block;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .hamburger-container {
     position: fixed;
     right: -500px;
-    width: 500px;
+    width: 350px;
     height: 100%;
     background-color: #fbe365;
     transition: 0.5s;
