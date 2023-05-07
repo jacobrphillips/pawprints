@@ -306,17 +306,18 @@
         margin-top: 200px;
         margin-left: 30px;
         width: 50%;
-        height: 300px;
+        height: 350px;
     }
     
     .why-us-container p {
-        font-size: 1.6rem;
-        padding: 15px;
+        font-size: 1.9rem;
+        padding: 18px;
+      
     }
 
     .dog-picture-container {
         width: 30%;
-        height: 300px;
+        height: 350px;
         margin-top: 200px;
         margin-right: 20px;
         background-image: url(../../../../../src/assets/img/christal-yuen-Aka2x2D4Ph0-unsplash.jpg);

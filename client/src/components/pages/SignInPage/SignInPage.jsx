@@ -1,7 +1,15 @@
-import React from 'react'
+import React , { useEffect }from 'react'
 import styles from './SignInPage.module.css'
+import { useLocation } from 'react-router-dom'
 
 const SignInPage = () => {
+
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
   return (
     <main className={styles['sign-up-page']}>
         <div className={styles['sign-up-container']}>
@@ -12,7 +20,7 @@ const SignInPage = () => {
                 <input className={styles['input-email']} type="text"placeholder='email@email.com' />
             </div>
             <button  className={styles['input-submit-btn']} type="submit">Submit</button>
-            <span className={styles['user-hint']}>User Demo: John | user@test.com</span>
+            <span className={styles['user-hint']}>User Demo: User | user@test.com</span>
              <span className={styles['admin-hint']}>Admin Demo: Admin | admin@test.com</span>
         </div>
 

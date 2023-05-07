@@ -1,0 +1,513 @@
+.pets-info-page {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pets-info-header {
+    width: 100%;
+}
+
+.back-arrow-container {
+    height: 50px;
+    width: 50px;
+}
+
+.pet-info-pic-container {
+    border: 2px solid #454646;
+    border-radius: 25px;
+    height: 200px;
+    width: 200px;
+    margin-left: 60px;
+    margin-top: 30px;
+    background-size: cover;
+    background-position: 50% 30%;
+}
+
+.pet-info-list-container {
+    display: flex;
+    justify-content: center;
+    border: 2px solid #454646;
+    border-radius: 25px;
+    height: 220px;
+    width: 250px;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+    
+.pet-info-title-list {
+    list-style-type: none;
+    padding: 20px 20px 0px 10px;
+    font-weight: 700;
+}
+
+.pet-info-title-list li {
+    padding: 2px;
+}
+
+.pet-info-list {
+    list-style-type: none;
+    padding-top: 20px;
+}
+
+.pet-info-list li {
+    padding: 2px;
+}
+
+.adopt-me-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 30px 0px 35px 0px;
+}
+
+.adopt-me-btn {
+    background-color: #fbe365;
+    border: 2px solid #454646;
+    border-radius: 30px;
+    padding: 10px 70px 10px 70px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.adopt-me-btn:hover {
+    background-color: #ffd607;
+    transition: .4s;
+}
+
+.adopt-me-btn:active {
+    background-color: #fbe365;
+    color: #636363;
+}
+
+
+@media screen and (min-width: 375px) {
+    
+    .pet-info-pic-container {
+        border: 2px solid #454646;
+        border-radius: 25px;
+        height: 250px;
+        width: 200px;
+        margin-left: 90px;
+        margin-top: 30px;
+        background-size: cover;
+        background-position: 50% 30%;
+    }
+    
+    .pet-info-list-container {
+        display: flex;
+        justify-content: center;
+        border: 2px solid #454646;
+        border-radius: 25px;
+        height: 220px;
+        width: 250px;
+        margin-left: 65px;
+        margin-top: 30px;
+    }
+    
+    .pet-info-title-list{
+        list-style-type: none;
+        padding: 20px 20px 0px 10px;
+        font-weight: 700;
+    }
+    
+    
+    .pet-info-list {
+        list-style-type: none;
+        padding-top: 20px;
+    }
+    
+    .adopt-me-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 30px 0px 35px 0px;
+    }
+    
+    .adopt-me-btn {
+        background-color: #fbe365;
+        border: 2px solid #454646;
+        border-radius: 30px;
+        padding: 10px 70px 10px 70px;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    
+    .adopt-me-btn:hover {
+        background-color: #ffd607;
+        transition: .4s;
+    }
+    
+    .adopt-me-btn:active {
+        background-color: #fbe365;
+        color: #636363;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    
+    .pet-info-pic-container {
+        border: 2px solid #454646;
+        border-radius: 25px;
+        height: 270px;
+        width: 250px;
+        margin-left: 90px;
+        margin-top: 30px;
+        background-size: cover;
+        background-position: 50% 30%;
+    }
+    
+    .pet-info-list-container {
+        display: flex;
+        justify-content: center;
+        border: 2px solid #454646;
+        border-radius: 25px;
+        height: 260px;
+        width: 250px;
+        margin-left: 90px;
+        margin-top: 30px;
+    }
+    
+    .pet-info-title-list{
+        list-style-type: none;
+        padding: 20px 20px 0px 10px;
+        font-weight: 700;
+    }
+
+    .pet-info-title-list li {
+        padding: 5px;
+    }
+    
+    
+    .pet-info-list {
+        list-style-type: none;
+        padding-top: 20px;
+    }
+    
+    .pet-info-list li {
+        padding: 5px;
+    }
+    
+
+    .adopt-me-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 30px 0px 35px 0px;
+    }
+    
+    .adopt-me-btn {
+        background-color: #fbe365;
+        border: 2px solid #454646;
+        border-radius: 30px;
+        padding: 10px 70px 10px 70px;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    
+    .adopt-me-btn:hover {
+        background-color: #ffd607;
+        transition: .4s;
+    }
+    
+    .adopt-me-btn:active {
+        background-color: #fbe365;
+        color: #636363;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .back-arrow-container {
+        height: 70px;
+        width: 70px;
+        margin: 20px;
+    }    
+    
+    .pet-info-pic-container {
+        border: 2px solid #454646;
+        border-radius: 25px;
+        height: 370px;
+        width: 350px;
+        margin-left: 220px;
+        margin-top: 30px;
+        background-size: cover;
+        background-position: 50% 30%;
+    }
+    
+    .pet-info-list-container {
+        display: flex;
+        justify-content: center;
+        border: 2px solid #454646;
+        border-radius: 25px;
+        height: 330px;
+        width: 350px;
+        margin-left: 210px;
+        margin-top: 30px;
+    }
+    
+    .pet-info-title-list{
+        list-style-type: none;
+        padding: 20px 10px 0px 10px;
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+
+    .pet-info-title-list li {
+        padding: 5px;
+    }
+    
+    
+    .pet-info-list {
+        list-style-type: none;
+        padding-top: 20px;
+        font-size: 1.5rem;
+    }
+    
+    .pet-info-list li {
+        padding: 5px;
+    }
+    
+    .adopt-me-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 30px 0px 35px 0px;
+    }
+    
+    .adopt-me-btn {
+        background-color: #fbe365;
+        border: 2px solid #454646;
+        border-radius: 30px;
+        padding: 10px 110px 10px 110px;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    
+    .adopt-me-btn:hover {
+        background-color: #ffd607;
+        transition: .4s;
+    }
+    
+    .adopt-me-btn:active {
+        background-color: #fbe365;
+        color: #636363;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .back-arrow-container {
+        height: 70px;
+        width: 70px;
+        margin: 20px;
+    }    
+    
+    .pet-info-pic-container {
+        float: left;
+        height: 570px;
+        width: 350px;
+        margin: 30px 50px 140px 170px;
+      }
+    
+      .pet-info-list-container {
+        float: left;
+        margin-left: 0;
+      }
+
+    .pet-info-title-list{
+        list-style-type: none;
+        padding: 20px 10px 0px 10px;
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+
+    .pet-info-title-list li {
+        padding: 5px;
+    }
+    
+    .pet-info-list {
+        list-style-type: none;
+        padding-top: 20px;
+        font-size: 1.5rem;
+    }
+    
+    .pet-info-list li {
+        padding: 5px;
+    }
+    
+    .adopt-me-container {
+        position: absolute;
+        top: 480px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 30px 0px 0px 230px;
+    
+    }
+    
+    .adopt-me-btn {
+        background-color: #fbe365;
+        border: 2px solid #454646;
+        border-radius: 30px;
+        padding: 10px 110px 10px 110px;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    
+    .adopt-me-btn:hover {
+        background-color: #ffd607;
+        transition: .4s;
+    }
+    
+    .adopt-me-btn:active {
+        background-color: #fbe365;
+        color: #636363;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .back-arrow-container {
+        height: 80px;
+        width: 80px;
+        margin: 40px;
+    }    
+    
+    .pet-info-pic-container {
+        float: left;
+        height: 670px;
+        width: 550px;
+        margin: 30px 50px 0px 120px;
+      }
+    
+      .pet-info-list-container {
+        float: left;
+        height: 580px;
+        width: 550px;
+        margin-left: 0;
+      }
+
+    .pet-info-title-list{
+        list-style-type: none;
+        padding: 60px 10px 0px 10px;
+        font-weight: 700;
+        font-size: 2.6rem;
+    }
+
+    .pet-info-title-list li {
+        padding: 5px;
+    }
+    
+    .pet-info-list {
+        list-style-type: none;
+        padding: 60px 10px 0px 10px;
+        font-size: 2.6rem;
+    }
+    
+    .pet-info-list li {
+        padding: 5px;
+    }
+    
+    .adopt-me-container {
+        position: absolute;
+        top: 770px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 30px 0px 0px 270px;
+    
+    }
+    
+    .adopt-me-btn {
+        background-color: #fbe365;
+        border: 2px solid #454646;
+        border-radius: 30px;
+        padding: 10px 210px 10px 210px;
+        font-size: 1.9rem;
+        font-weight: 600;
+    }
+    
+    .adopt-me-btn:hover {
+        background-color: #ffd607;
+        transition: .4s;
+    }
+    
+    .adopt-me-btn:active {
+        background-color: #fbe365;
+        color: #636363;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+
+    .back-arrow-container {
+        height: 80px;
+        width: 80px;
+        margin: 40px;
+    }    
+    
+    .pet-info-pic-container {
+        float: left;
+        height: 670px;
+        width: 550px;
+        margin: 30px 50px 140px 190px;
+      }
+    
+      .pet-info-list-container {
+        float: left;
+        height: 580px;
+        width: 550px;
+        margin-left: 0;
+      }
+
+    .pet-info-title-list{
+        list-style-type: none;
+        padding: 60px 10px 0px 10px;
+        font-weight: 700;
+        font-size: 2.6rem;
+    }
+
+    .pet-info-title-list li {
+        padding: 5px;
+    }
+    
+    .pet-info-list {
+        list-style-type: none;
+        padding: 60px 10px 0px 10px;
+        font-size: 2.6rem;
+    }
+    
+    .pet-info-list li {
+        padding: 5px;
+    }
+    
+    .adopt-me-container {
+        position: absolute;
+        top: 770px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 30px 0px 0px 270px;
+    
+    }
+    
+    .adopt-me-btn {
+        background-color: #fbe365;
+        border: 2px solid #454646;
+        border-radius: 30px;
+        padding: 10px 210px 10px 210px;
+        font-size: 1.9rem;
+        font-weight: 600;
+    }
+    
+    .adopt-me-btn:hover {
+        background-color: #ffd607;
+        transition: .4s;
+    }
+    
+    .adopt-me-btn:active {
+        background-color: #fbe365;
+        color: #636363;
+    }
+}
