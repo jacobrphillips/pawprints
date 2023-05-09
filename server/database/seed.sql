@@ -1,10 +1,10 @@
-INSERT INTO users (name, email) VALUES
-('User', 'user@test.com'),
-('Admin', 'admin@test.com'),
-('John Doe', 'john.doe@example.com'),
-('Jane Doe', 'jane.doe@example.com'),
-('Bob Smith', 'bob.smith@example.com'),
-('Sara Johnson', 'sara.johnson@example.com');
+INSERT INTO users (email, password) VALUES
+('user@test.com', 'password1'),
+('admin@test.com', 'password2'),
+('john.doe@example.com', 'password3'),
+('jane.doe@example.com', 'password4'),
+('bob.smith@example.com', 'password5');
+
 
 INSERT INTO pets (name, type, breed, colour, age, weight, gender, image_url) VALUES
 ('Balto', 'Dog', 'Siberian Husky', 'Black and White', 3, 70, 'Male', 'https://images.pexels.com/photos/803766/pexels-photo-803766.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'),

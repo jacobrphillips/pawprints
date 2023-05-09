@@ -4,8 +4,8 @@ DROP TABLE IF EXISTS pets CASCADE;
 
 CREATE TABLE users (
     id serial PRIMARY KEY,
-    name varchar(50),
-    email varchar(50)
+    email varchar(50) UNIQUE NOT NULL,
+    password varchar(60) NOT NULL
 );
 
 CREATE TABLE pets (

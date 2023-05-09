@@ -11,14 +11,14 @@ const pool = new Pool({connectionString: process.env.DATABASE_URL});
 pool.connect();
 
 
-app.use(bodyParser.json({ type: "application/json" }));
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 app.use(express.json());
 app.use(cors());
 
 // get all animals
 app.get('/api/pets', (req, res) => {
-    const query = `SELECT * FROM pets`;
+    const query = `SELECT * FROM pets ORDER BY id DESC`;
     pool.query(query, (err, result)=> {
         if (err){
             console.error(err);
@@ -53,6 +53,7 @@ app.post('/api/pets', (req, res) => {
             res.sendStatus(500);
         } else {
             res.send(result.rows[0])
+            res.end()
         }
     })
 });
@@ -77,14 +78,14 @@ app.delete('/api/pets/:id', (req, res) => {
     const id = req.params.id;
     const query = `DELETE FROM pets WHERE id = $1`;
     pool.query(query, [id], (err, result) => {
-        if (err) {
-            console.error(err);
-            res.sendStatus(500);
-          } else {
-            res.send(result.rows[0]);
-          }
+      if (err) {
+        console.error(err);
+        res.status(500).json({ error: 'Server error' });
+      } else {
+        res.status(200).json({ message: 'Pet deleted successfully' });
+      }
     });
-});
+  });
 
 
 
