@@ -67,7 +67,7 @@ button {
   color: #312e1d;
 }
 
-.header-menu .sign-up-btn {
+.header-menu .login-btn {
   background-color: transparent;
   color: #454646;
   border-color: #454646;
@@ -78,12 +78,13 @@ button {
   width: 100px;
 }
 
-.sign-up-btn:hover {
-  transition: 0.4s;
-  background-color: #454646;
-  color: #fbe365;
-  border-color: #fbe365;
-}
+  .login-btn:hover{
+    transition: 0.4s;
+    color: #fbe365;
+    background-color: #45464622;
+    border-color: #fbe365;
+  }
+
 
 .hamburger,
 .bar {
@@ -234,7 +235,7 @@ button {
     background-color: #4646452f;
   }
 
-  .sign-up-btn-long {
+  .login-btn-long {
     background-color: transparent;
     color: #454646;
     background-color: #f4f4f4;
@@ -246,10 +247,10 @@ button {
     width: 100px;
   }
 
-  .sign-up-btn-long:hover {
+  .login-btn-long:hover{
     transition: 0.4s;
-    background-color: #454646;
     color: #fbe365;
+    background-color: #45464622;
     border-color: #fbe365;
   }
 

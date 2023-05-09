@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import styles from './PetsHeader.module.css'
+import styles from './AdminHeader.module.css'
 
-const PetsHeader = () => {
+const AdminHeader = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const location = useLocation();
@@ -37,9 +37,7 @@ const PetsHeader = () => {
         <nav className={styles['nav-long']}>
           <ul>
             <li><Link to="/">Home</Link></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#adopt">Adopt</a></li>
-            <li><a href="#">Pets</a></li>
+            <li><Link to='/upload' >Upload</Link></li>
           </ul>
           <button className={styles['login-btn-long']}><Link to="/login">Log In</Link></button>
         </nav>
@@ -53,9 +51,7 @@ const PetsHeader = () => {
           <nav className={styles['header-menu']}>
             <ul>
               <li onClick={toggleHamburgerMenu}><Link to="/">Home</Link></li>
-              <li><a href="#about" onClick={toggleHamburgerMenu}>About</a></li>
-              <li><a href="#adopt" onClick={toggleHamburgerMenu}>Adopt</a></li>
-              <li><a href="#" onClick={toggleHamburgerMenu}>Pets</a></li>
+              <li onClick={toggleHamburgerMenu}><Link to="/upload">Upload</Link></li>
             </ul>
             <button className={styles['login-btn']}><Link to="/login">Log In</Link></button>
           </nav>
@@ -66,4 +62,4 @@ const PetsHeader = () => {
   );
 }
 
-export default PetsHeader
+export default AdminHeader

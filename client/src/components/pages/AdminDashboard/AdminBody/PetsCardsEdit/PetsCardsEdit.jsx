@@ -1,11 +1,11 @@
 import React from "react";
-import styles from "./PetsCards.module.css";
+import styles from "./PetsCardsEdit.module.css"
 import { Link } from "react-router-dom";
 
-const PetsCards = ({ id, name, type, breed, colour, age, weight, gender, image_url, setSelectedPet }) => {
+const PetsCardsEdit = ({ id, name, type, breed, colour, age, weight, gender, image_url, setSelectedPet }) => {
   return (
     <Link
-      to="/pets-info"
+      to="/edit"
       style={{textDecoration: 'none', color: '#454645'}}
     >
       <div
@@ -23,4 +23,4 @@ const PetsCards = ({ id, name, type, breed, colour, age, weight, gender, image_u
   );
 };
 
-export default PetsCards;
+export default PetsCardsEdit;

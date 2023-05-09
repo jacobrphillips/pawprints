@@ -40,7 +40,7 @@ const Header = () => {
             <li><a href="#adopt">Adopt</a></li>
             <li><Link to="/pets">Pets</Link></li>
           </ul>
-          <button className={styles['sign-up-btn-long']}><Link to="/sign-up">Sign Up</Link></button>
+          <button className={styles['login-btn-long']}><Link to="/login">Log In</Link></button>
         </nav>
       ) : (
         <div className={styles['hamburger-container'] + (isOpen ? ` ${styles.active}` : '')}>
@@ -56,7 +56,7 @@ const Header = () => {
               <li><a href="#adopt" onClick={toggleHamburgerMenu}>Adopt</a></li>
               <li onClick={toggleHamburgerMenu}><Link to="/pets">Pets</Link></li>
             </ul>
-            <button className={styles['sign-up-btn']}><Link to="/sign-up">Sign Up</Link></button>
+            <button className={styles['login-btn']}><Link to="/login">Log In</Link></button>
           </nav>
         </div>
       )}

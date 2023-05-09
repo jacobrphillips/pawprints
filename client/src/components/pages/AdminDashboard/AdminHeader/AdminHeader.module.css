@@ -78,12 +78,12 @@ button {
   width: 100px;
 }
 
-.login-btn:hover{
-  transition: 0.4s;
-  color: #fbe365;
-  background-color: #45464622;
-  border-color: #fbe365;
-}
+  .login-btn:hover{
+    transition: 0.4s;
+    color: #fbe365;
+    background-color: #45464622;
+    border-color: #fbe365;
+  }
 
 
 .hamburger,
@@ -160,11 +160,11 @@ button {
   display: block;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .hamburger-container {
     position: fixed;
     right: -500px;
-    width: 350px;
+    width: 500px;
     height: 100%;
     background-color: #fbe365;
     transition: 0.5s;
@@ -192,7 +192,7 @@ button {
     right: 1%;
     justify-content:right;
     /* height: 100px; */
-    width: 50%;
+    width: 80%;
     z-index: 3;
   }
 
@@ -200,7 +200,7 @@ button {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
-    width: 70%;
+    width: 30%;
     border-radius: 100px;
     background-color: #fbe365;
     margin-top: 20px;  
@@ -238,7 +238,7 @@ button {
   .login-btn-long {
     background-color: transparent;
     color: #454646;
-   
+    background-color: #f4f4f4;
     border-color: #454646;
     font-size: 1.1rem;
     border-radius: 30px;
@@ -257,3 +257,14 @@ button {
 
   }
 
+@media screen and (min-width: 1440px) {
+  .nav-long {
+    position: fixed;
+    display: flex;
+    right: 1%;
+    justify-content:right;
+    /* height: 100px; */
+    width: 60%;
+    z-index: 3;
+  }
+}

@@ -1,0 +1,149 @@
+.thank-you-page {
+    width: 100%;
+    height: 300px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thank-you-container {
+    background-color: #fbe365;
+    padding: 70px;
+    border: 4px solid #454646;
+    border-radius: 25px;
+}  
+
+.thank-you-header {
+    margin-bottom: 50px;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-btn, .pets-btn {
+    background-color: #f4f4f4;
+    font-size: 1.3rem;
+    padding: 0px 15px 0px 15px;
+    border-radius: 25px;
+}
+
+@media screen and (min-width: 320px ) {
+    .thank-you-page {
+        width: 50%;
+        height: 300px;
+        margin-top: 150px;
+        margin-left: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .thank-you-container {
+        background-color: #fbe365;
+        padding: 70px;
+        border: 4px solid #454646;
+        border-radius: 25px;
+    } 
+    .btn-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-btn {
+        margin-bottom: 70px;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .thank-you-page {
+        width: 50%;
+        height: 300px;
+        margin-top: 150px;
+        margin-left: 95px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .thank-you-container {
+        background-color: #fbe365;
+        padding: 70px;
+        border: 4px solid #454646;
+        border-radius: 25px;
+    } 
+    .btn-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-btn {
+        margin-bottom: 70px;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .thank-you-page {
+        width: 50%;
+        height: 300px;
+        margin-top: 150px;
+        margin-left: 110px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .thank-you-container {
+        background-color: #fbe365;
+        padding: 70px;
+        border: 4px solid #454646;
+        border-radius: 25px;
+    } 
+    .btn-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-btn {
+        margin-bottom: 70px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .thank-you-page {
+        width: 100%;
+        height: 300px;
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .thank-you-container {
+        background-color: #fbe365;
+        padding: 70px;
+        border: 4px solid #454646;
+        border-radius: 25px;
+    }  
+    
+    .thank-you-header {
+        margin-bottom: 50px;
+    }
+    
+    .btn-container{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .home-btn, .pets-btn {
+        background-color: #f4f4f4;
+        font-size: 1.3rem;
+        padding: 0px 15px 0px 15px;
+        border-radius: 25px;
+    }
+}

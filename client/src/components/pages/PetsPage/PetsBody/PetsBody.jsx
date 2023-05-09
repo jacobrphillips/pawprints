@@ -3,8 +3,8 @@ import styles from "./PetsBody.module.css";
 import PetsCards from "./PetsCards/PetsCards";
 
 const PetsBody = ({ petsData, setSelectedPet }) => {
+  
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
 
   const handleResize = () => {
     setWindowWidth(window.innerWidth);
@@ -17,6 +17,16 @@ const PetsBody = ({ petsData, setSelectedPet }) => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const handleNextSlide = () => {
+    setActiveIndex((prevIndex) => (prevIndex === Math.ceil(petsData.length / 3) - 1 ? 0 : prevIndex + 1));
+  };
+
+  const handlePrevSlide = () => {
+    setActiveIndex((prevIndex) => (prevIndex === 0 ? Math.ceil(petsData.length / 3) - 1 : prevIndex - 1));
+  };
 
   return (
     <section className={styles["pets-container"]}>
@@ -52,24 +62,31 @@ const PetsBody = ({ petsData, setSelectedPet }) => {
         </div>
       </div>
       <div className={styles["table-container"]}>
+      <button className={styles["prev-button"]} onClick={handlePrevSlide}>
+          Prev
+        </button>
         <div className={styles["pet-cards-container"]}>
-       
+        <div className={styles["pet-cards-wrapper"]} style={{ transform: `translateX(-${activeIndex * 100}%)` }}>
           {petsData.map((pet) => (
-           <PetsCards
-           key={pet.id}
-           name={pet.name}
-           type={pet.type}
-           breed={pet.breed}
-           colour={pet.colour}
-           age={pet.age}
-           weight={pet.weight}
-           gender={pet.gender}
-           image_url={pet.image_url}
-           setSelectedPet={setSelectedPet}
-         />
+            <PetsCards
+              key={pet.id}
+              id={pet.id}
+              name={pet.name}
+              type={pet.type}
+              breed={pet.breed}
+              colour={pet.colour}
+              age={pet.age}
+              weight={pet.weight}
+              gender={pet.gender}
+              image_url={pet.image_url}
+              setSelectedPet={setSelectedPet}
+            />
           ))}
-        
         </div>
+        </div>
+        <button className={styles["next-button"]} onClick={handleNextSlide}>
+          Next
+        </button>
       </div>
     </section>
   );
