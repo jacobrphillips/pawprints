@@ -80,6 +80,40 @@
     color: #636363;
 }
 
+.update-button {
+    position: absolute;
+    text-decoration: none;
+    color: #454646;
+    background-color: #fbe365;
+    border: 2px solid #454646;
+    border-radius: 30px;
+    padding: 10px 30px 10px 30px;
+    font-weight: 600;
+    transform: translateY(600px) translateX(-50px);
+}
+
+.delete-button {
+    position: absolute;
+    text-decoration: none;
+    color: #454646;
+    background-color: #fbe365;
+    border: 2px solid #454646;
+    border-radius: 30px;
+    padding: 10px 30px 10px 30px;
+    font-weight: 600;
+    transform: translateY(600px) translateX(-170px);
+}
+
+input {
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+
+
+
+
 
 @media screen and (min-width: 375px) {
     
