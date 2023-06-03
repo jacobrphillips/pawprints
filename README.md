@@ -1,6 +1,6 @@
 # pawprints Animal Shelter and Rescue
 
-Pawprints is a full-stack web application that serves as an animal shelter and rescue platform. It allows users to browse and adopt animals in need of a loving home. The application is built using React, Node.js, Express, and PostgreSQL.
+pawprints is a full-stack web application that serves as an animal shelter and rescue platform. It allows users to browse and adopt animals in need of a loving home. The application is built using React, Node.js, Express, and PostgreSQL.
 
 ## Features
 
